@@ -1,0 +1,20 @@
+{
+  "name": "cronjobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "npx tsc --watch",
+    "dotfiles-cronjob": "pm2 start src/backup_dotfiles.js --name copy_dotfiles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "^2.1.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
